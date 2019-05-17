@@ -1,189 +1,439 @@
 <!DOCTYPE html>
-<html lang="es">
-  <head>
-    <meta charset="UTF-8"  />
-    <title>Hola soy Leidy Moncada</title>
-    <link rel="icon" type=imagen/ico href="imagenes/favicon.ico" />
-    <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Source+Sans+Pro" rel="stylesheet">
-    <!----<link rel="stylesheet" href="css/media.css" media="screen and (max-width:768px)"/>-->
-    <link rel="stylesheet" href="css/estilos.css">
-    <!----<style>
-      @media screen and (max-width: 768px) {
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Instagram</title>
+    <link rel ="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bad+Script|Nanum+Gothic&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+   <style>
         body {
-          border: 10px solid blue;
+            margin:0;
+            font-family: Arial, Helvetica, sans-serif;
         }
-      }
-    </style>-->
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  </head>
-  <body background="imagenes/universo.png">
-    <i class="icon-menu burger-button" id="burger-menu"></i>
-    <header class="header">
-      <div class="container">
-        <figure class="logo">
-          <img src="imagenes/logo.png" height="50" alt="Logo de http://leonidasesteban.com" />
-        </figure>
-        <nav class="menu">
-        <ol>
-          <li>
-            <a class="link" href="#portafolio">Frases</a>
-          </li>
-          <li>
-            <a class="link" href="#eventos">Experiencia</a>
-          </li>
-          <li>
-            <a class="link" href="#contacto">Trabajemos juntos</a>
-          </li>
-        </ol>
-      </nav>
-    </div>
-  </header>
-  <section class="hero">
-    <div class="container">
-      <h1>
-        Hola! Soy <strong>Leidy Moncada</strong> <br/>desarrollador <strong>web</strong> con<br> pasión por la <strong>lectura</strong>
-      </h1>
-      <img class="hero-imagen" src="imagenes/hero.png" width="500" height="300" alt="imagen principal del sitio">
-    </div>
-  </section>
-  <section id="Portafolio" class="portfolio">
-    <div class="container">
-        <h2>Sobre Mi</h2>
-        <article class="project">
-          <div class="project-details">
-          <h3 class="project-title">Platzi video</h3>
-          <h6 class="project-course">React Navite / React</h6>
-          <p class="project-date"><small><strong>Fecha:</strong> 01/07/2018</small></p>
-          <p class="project-url"><small><strong>Puedes verlo en:</strong> www.platzi.com/native</small></p>
-          <p class="project-description">Platzi Video fue el resultado de 3 meses de trabajo 
-            para crear la mejor app para enseñar el funcionamiento 
-            de react y React Native. Desde crear un vista-detalle, hasta patrones avanzados de nevegación, este proyecto ha sido el ejemplo de futuros creadores de aplicaciones multiplataforma.</p>
-        </div>
-        <figure class="project-imageContainer">
-          <img class="project-image" width="500" src="imagenes/platzi-video-react-native.png" alt="proyecto del curso de React Native">
-        </figure>
-        </article>
-          <article class="project">
-          <div class="project-details">
-          <h3 class="project-title">Platzi video</h3>
-          <h6 class="project-course">React Navite / React</h6>
-          <p class="project-date"><small><strong>Fecha:</strong> 01/07/2018</small></p>
-          <p class="project-url"><small><strong>Puedes verlo en:</strong> www.platzi.com/native</small></p>
-          <p class="project-description">Platzi Video fue el resultado de 3 meses de trabajo 
-            para crear la mejor app para enseñar el funcionamiento 
-            de react y React Native. Desde crear un vista-detalle, hasta patrones avanzados de nevegación, este proyecto ha sido el ejemplo de futuros creadores de aplicaciones multiplataforma.</p>
-        </div>
-        <figure class="project-imageContainer">
-          <img class="project-image" width="500" src="imagenes/platzi-video-react-native.png" alt="proyecto del curso de React Native">
-        </figure>
-      </article>
-    </div>
-</section>
- <div class="container">
-  <h2 class="event-list-title">Mis escritores favoritos</h2>
-</div>
- <section id="eventos" class="event-list">
-  <div class="container">
-      <article class="event">
-          <figure class="event-imageContainer">
-            <img class="event-image" src="imagenes/pauloconf.png" width="500"/>
-          </figure>
-          <div class="event-detail">
-              <h3 class="event-title"> PauloConf 2019</h3>
-              <p class="event-description">Paulo Coelho es un novelista, director, actor, periodista y compositor brasileño. Paulo nació el 24 de agosto de 1947, en Río de Janeiro, Brasil, en una familia de clase media y fuerte influencia católica. Estudió en un colegio jesuita.</p>
-              <a class="event-url" href="https://youtu.be/oKmuwCXfId8" target="_blank">Ver Audio Libro "El alquimista"</a>
-          </div>     
-      </article>
-      <article class="event">
-          <figure class="event-imageContainer">
-            <div class="flexible-video">
-              <iframe class="youtube-video" width="560" height="315" src="https://www.youtube.com/embed/0jNvJU52LvU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-            <!----<img class="event-image" src="imagenes/annericeconf.png" width="500"/>-->
-          </figure>
-          <div class="event-detail">
-              <h3 class="event-title"> Anne Rice Conf 2019</h3>
-              <p class="event-description">Su obra más conocida es la serie literaria Crónicas vampíricas, cuya temática principal es el amor, la muerte, la inmortalidad, el existencialismo y las condiciones humanas. De sus libros se han vendido cerca de 100 millones de ejemplares, convirtiéndola en una de las escritoras más leídas a nivel mundial.</p>
-              <a class="event-url" href="https://youtu.be/a75SX8XXR6w" target="_blank">Ver Documental "la vida de un vampiro"</a>
-          </div>     
-      </article>
-      <article class="event">
-          <figure class="event-imageContainer">
-            <img class="event-image" src="imagenes/jroling.png" width="500"/>
-          </figure>
-          <div class="event-detail">
-              <h3 class="event-title"> J. K. Rowling</h3>
-              <p class="event-description">A los nueve años de edad, Rowling se mudó a Tutshill, en Gloucestershire, cerca de Chepstow, Gales.16​ Cuando era adolescente, su tía abuela le dio una vieja copia de la autobiografía de Jessica Mitford, Hons and Rebels.22​ Mitford se convirtió en la heroína de Rowling, y Rowling leyó seguidamente todos sus libros.2</p>
-              <a class="event-url" href="https://youtu.be/gnsGtoJdi0o" target="_blank">Ver Audio Libro "Harry Potter"</a>
-          </div>     
-      </article>
-      <article class="event">
-          <figure class="event-imageContainer">
-            <video class="html-video" src="videos/f8.mp4" width="1280" height="720" controls></video>
-            <!----<img class="event-image" src="imagenes/platziconf.png" width="500"/>-->
-          </figure>
-          <div class="event-detail">
-              <h3 class="event-title"> PlatziConf México 2018</h3>
-              <p class="event-description">El evento más grande sobre gente que quiere aprender más de internet. En este evento te comparto como tener una vida de constante aprendizaje</p>
-              <a class="event-url" href="https://www.youtube.com/watch?v=BIS7cWGgJg0" target="_blank">Ver plática</a>
-          </div>     
-      </article>
-  </div>
-    
-  </section> 
-  <section id="contacto" class="contact">
-    <div class="container">
-        <form action="/suscripcion/" class="form-email">
-          <h3>¿Creamos algo juntos?</h3>
-          <input type="text" placeholder="Déjame tu email" id="email">
-          <button>Enviar</button>
-        </form>
-        <div class="social">
-          <a href="https://twitter.com/laleidy_" class="social-link twitter"></a>
-          <a href="https://facebook.com/leiidyapop" class="social-link facebook"></a>
-          <a href="https://github.com/leonidasesteban" class="social-link github"></a>
-          <a href="https://instagram.com/leiidyamoncada" class="social-link instagram"></a>
-        </div>
-  </div>
-  </section> -->
-    <footer class="footer">
-      <div class="container">
-        <div>
-          <p>Curso de Desarrollo web online 2018 <img src="imagenes/platzi.png" width="80" alt="platzi"></p>
-          </div>
-          <div>
-            <p>
-              Designed with 💋 by <a href="https://twitter.com/laleidy_">@laleidy_</a>
-            </p>
-          </div>
-      </div>
-    </footer>
-    <script>
-      const ipad=window.matchMedia("screen and (max-width:767px)");
-    ipad.addListener(validation);
-    const menu=document.querySelector(".menu");
-    const burgerButton= document.querySelector("#burger-menu");
-    console.log(menu);
-    console.log(burgerButton);
-    
-    function validation(event) {
-      if (event.matches) {
-        burgerButton.addEventListener("click",toggleMenu);
-      } else {
-        burgerButton.removeEventListener("click",toggleMenu);
-      }
-      console.log(event.matches);
-    }
-    function toggleMenu() {
-      if (menu.classList.contains("is-active")) {
-        menu.classList.remove("is-active");
-      } else {
-        menu.classList.add("is-active");
-      }
-    }
-    validation(ipad);
-    
-    </script>
-  </body>
-</html>
 
+     #navigation-container {
+         overflow: hidden;
+         background-color: rgb(235, 201, 220);
+         position: fixed;
+         top:0;
+         width: 100%;
+         z-index: 2;
+         border-bottom: 1px solid rgba(0,0,0,.2);
+     }
+
+     .navigation {
+         display: grid;
+         grid-template-columns: repeat(3, minmax(100px, 293px));
+         grid-template-rows: 77px;
+         grid-gap: 28px;
+         justify-content: center;
+         align-items: center;
+     }
+
+     .logo span {
+         font-family: 'Pacifico', cursive;
+         font-size: 30px;
+     }
+     .form {
+         display: grid;
+         justify-content: center;
+     }
+     .fab fa-instagram {
+            font-size: 50px;
+     }
+
+     .navbar {
+         display: grid;
+         justify-content: end;
+     }
+     .form {
+         position: relative;
+     }
+     .form input[type=text] {
+    text-align: center;
+    color: rgba(0, 0, 0, .2);
+    border: 1px solid rgba(0, 0, 0, .2);
+    border-radius: 3px;
+    padding: 5px 28px;
+
+}
+
+.fas.fa-search {
+    font-size: 14px;
+    position: absolute;
+    top: 6px;
+    left: 105px;
+    color: rgba(0, 0, 0, .2);
+}
+
+.navigation .navbar ul {
+    margin: 0;
+    display: inline;
+}
+
+.navigation .navbar ul li {
+    display: inline-block;
+    padding: 0 .8em;
+    font-size: 20px;
+}
+
+.navigation .navbar ul li a{
+    text-decoration: none;
+    color: #444;
+}
+
+/* Info user*/
+.login {
+    margin-top: 120px;
+    display: grid;
+    grid-template-columns: minmax(100px, 321px) minmax(200px, 614px);
+    justify-content: center;
+}
+
+.avatar,
+.info {
+    padding-bottom: 30px;
+    border-bottom: 1px solid rgba(0, 0, 0, .2);
+}
+
+.user {
+    font-size: 28px;
+    color:#262626;
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    line-height: 32px;
+    margin: -5px 0 -6px;
+    font-family: 'Nanum Gothic', sans-serif;
+ 
+}
+
+input[type="button"] {
+    background-color: #3897f0;
+    border: 1px solid #3897f0;
+    border-radius: 4px;
+    padding: 8px 25px;
+    color: #fff;
+    font-weight: 300;
+    margin-right: 20px;
+    position: relative;
+}
+
+.image-avatar img{
+    border-radius: 150px;
+    width: 200px;
+    height: 200px;
+    -webkit-border-radius: 150px; 
+
+ 
+}
+
+.info {
+    display: grid;
+    grid-template-rows: repeat(3, 40px);
+    align-content: center;
+    align-items: end;
+    grid-gap: 10px;
+}
+
+.info span {
+    padding-right: 50px;
+}
+
+.user span {
+    padding-right: 20px;
+}
+
+
+        .post-list {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(100px, 293px));
+            justify-content: center;
+            grid-gap: 28px;
+        }
+        .post {
+            cursor: pointer;
+            position: relative;
+            display: block;
+        }
+        .post-image {
+            margin:0;
+        }
+        .post-image img {
+            width: 100%;
+            vertical-align: top;
+        }
+
+        .post-overlay {
+            background: rgba(0,0,0, .4);
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            top: 0;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+        }
+
+        .descripcion {
+            font-size: 10px;
+            margin-top: 20px;
+            text-decoration: none;
+           font-family: 'Bad Script', cursive; 
+            font-weight: normal;
+
+        }
+
+          .post:hover .post-overlay {
+           display:flex;
+           }
+
+           .post-likes,
+           .post-comments {
+               width: 80px;
+               margin: 5px;
+               font-weight: bold;
+               text-align: center;
+               display: inline-block;
+           }
+           .h2 {
+               font-size: 40px;
+               margin-top: 20px;
+               font-weight: normal;
+           }
+
+           @media screen and (max-width: 768px) {
+               .post-list {
+                   grid-gap: 3px;
+               }
+           }
+    </style>
+</head>
+<body>
+
+    <div id="navigation-container">
+    <div class="navigation">
+        <div class="logo item"><i class="fab fa-instagram"></i>
+            <span>Instagram</span>
+        </div>
+        <div class="form item">
+            <form action="#">
+                <input type="text" placeholder="Buscar"><i class="fas fa-search"></i>
+            </form>
+        </div>
+        <nav class="navbar item">
+            <ul>
+                <li>
+                    <a href="#"><i class="fas fa-compass"></i></a>
+                </li>
+                <li>
+                        <a href="#"><i class="fas fa-heart"></i></a>
+                    </li>
+                    <li>
+                            <a href="#"><i class="fas fa-user"></i></a>
+                        </li>
+            </ul>
+            </nav>
+    </div>
+    </div>
+
+    <section class="login">
+        <div class="avatar">
+        <figure class="image-avatar">
+            <a href="#">
+                <img src="imagenes/text.png" alt="">
+            </a>
+        </figure>
+        </div>
+        <div class="info">
+            <div class="user">
+                leiidyamoncada
+                <input type="button" value="Seguir">
+                <i class="fas fa-cong"></i>
+            </div>
+            <div class="info-user">
+                <span>
+                    <b>12</b>
+                    Publicaciones
+                </span>
+                <span>
+                    <b>380</b>
+                    Seguidores
+                </span>
+                <span>
+                    <b>138</b>
+                    Seguidos
+                </span>
+            </div>
+            <div class="name">
+                <span>
+                    <b>Leidy Moncada</b>
+                   
+                </span>
+            </div>
+            <div class="descripcion">
+        <h2>Hola me gusta la lectura, el diseño web y el cine.</h2>
+            </div>
+        </div>
+    </section>
+    <section class="post-list">
+        <a href="" class="post">
+            <figure class="post-image">
+                <img src="imagenes/imagen22.png" alt="">
+            </figure>
+            <span class="post-overlay">
+                <p>
+                 <span class="post-likes">150 <i class="fas fa-heart"></i></span>
+                 
+                 <span class="post-commnents">15</span>
+                 <i class="fas fa-comment"></i> <!-- Corazon -->
+                </p>
+            </span>
+            <a href="" class="post">
+                    <figure class="post-image">
+                        <img src="imagenes/imagen24.png" alt="">
+                    </figure>
+                    <span class="post-overlay">
+                        <p>
+                         <span class="post-likes">150 <i class="fas fa-heart"></i></span>
+                         
+                         <span class="post-commnents">15</span>
+                         <i class="fas fa-comment"></i> <!-- Corazon -->
+                        </p>
+                    </span>
+
+                    <a href="" class="post">
+                            <figure class="post-image">
+                                <img src="imagenes/imagen8.png" alt="">
+                            </figure>
+                            <span class="post-overlay">
+                                <p>
+                                 <span class="post-likes">150 <i class="fas fa-heart"></i></span>
+                                 
+                                 <span class="post-commnents">15</span>
+                                 <i class="fas fa-comment"></i> <!-- Corazon -->
+                                </p>
+                            </span>
+                            <a href="" class="post">
+                                    <figure class="post-image">
+                                        <img src="imagenes/imagen22.png" alt="">
+                                    </figure>
+                                    <span class="post-overlay">
+                                        <p>
+                                         <span class="post-likes">150 <i class="fas fa-heart"></i></span>
+                                         
+                                         <span class="post-commnents">15</span>
+                                         <i class="fas fa-comment"></i> <!-- Corazon -->
+                                        </p>
+                                    </span>
+                                    <a href="" class="post">
+                                            <figure class="post-image">
+                                                <img src="imagenes/imagen24.png" alt="">
+                                            </figure>
+                                            <span class="post-overlay">
+                                                <p>
+                                                 <span class="post-likes">150 <i class="fas fa-heart"></i></span>
+                                                 
+                                                 <span class="post-commnents">15</span>
+                                                 <i class="fas fa-comment"></i> <!-- Corazon -->
+                                                </p>
+                                            </span>
+                        
+                                            <a href="" class="post">
+                                                    <figure class="post-image">
+                                                        <img src="imagenes/imagen8.png" alt="">
+                                                    </figure>
+                                                    <span class="post-overlay">
+                                                        <p>
+                                                         <span class="post-likes">150 <i class="fas fa-heart"></i></span>
+                                                         
+                                                         <span class="post-commnents">15</span>
+                                                         <i class="fas fa-comment"></i> <!-- Corazon -->
+                                                        </p>
+                                                    </span>
+                                                    <a href="" class="post">
+                                                            <figure class="post-image">
+                                                                <img src="imagenes/imagen22.png" alt="">
+                                                            </figure>
+                                                            <span class="post-overlay">
+                                                                <p>
+                                                                 <span class="post-likes">150 <i class="fas fa-heart"></i></span>
+                                                                 
+                                                                 <span class="post-commnents">15</span>
+                                                                 <i class="fas fa-comment"></i> <!-- Corazon -->
+                                                                </p>
+                                                            </span>
+                                                            <a href="" class="post">
+                                                                    <figure class="post-image">
+                                                                        <img src="imagenes/imagen24.png" alt="">
+                                                                    </figure>
+                                                                    <span class="post-overlay">
+                                                                        <p>
+                                                                         <span class="post-likes">150 <i class="fas fa-heart"></i></span>
+                                                                         
+                                                                         <span class="post-commnents">15</span>
+                                                                         <i class="fas fa-comment"></i> <!-- Corazon -->
+                                                                        </p>
+                                                                    </span>
+                                                
+                                                                    <a href="" class="post">
+                                                                            <figure class="post-image">
+                                                                                <img src="imagenes/imagen8.png" alt="">
+                                                                            </figure>
+                                                                            <span class="post-overlay">
+                                                                                <p>
+                                                                                 <span class="post-likes">150 <i class="fas fa-heart"></i></span>
+                                                                                 
+                                                                                 <span class="post-commnents">15</span>
+                                                                                 <i class="fas fa-comment"></i> <!-- Corazon -->
+                                                                                </p>
+                                                                            </span>
+                                                                            <a href="" class="post">
+                                                                                    <figure class="post-image">
+                                                                                        <img src="imagenes/imagen22.png" alt="">
+                                                                                    </figure>
+                                                                                    <span class="post-overlay">
+                                                                                        <p>
+                                                                                         <span class="post-likes">150 <i class="fas fa-heart"></i></span>
+                                                                                         
+                                                                                         <span class="post-commnents">15</span>
+                                                                                         <i class="fas fa-comment"></i> <!-- Corazon -->
+                                                                                        </p>
+                                                                                    </span>
+                                                                                    <a href="" class="post">
+                                                                                            <figure class="post-image">
+                                                                                                <img src="imagenes/imagen24.png" alt="">
+                                                                                            </figure>
+                                                                                            <span class="post-overlay">
+                                                                                                <p>
+                                                                                                 <span class="post-likes">150 <i class="fas fa-heart"></i></span>
+                                                                                                 
+                                                                                                 <span class="post-commnents">15</span>
+                                                                                                 <i class="fas fa-comment"></i> <!-- Corazon -->
+                                                                                                </p>
+                                                                                            </span>
+                                                                        
+                                                                                            <a href="" class="post">
+                                                                                                    <figure class="post-image">
+                                                                                                        <img src="imagenes/imagen8.png" alt="">
+                                                                                                    </figure>
+                                                                                                    <span class="post-overlay">
+                                                                                                        <p>
+                                                                                                         <span class="post-likes">150 <i class="fas fa-heart"></i></span>
+                                                                                                         
+                                                                                                         <span class="post-commnents">15</span>
+                                                                                                         <i class="fas fa-comment"></i> <!-- Corazon -->
+                                                                                                        </p>
+                                                                                                    </span>
+
+        
+    </section>
+</body>
+</html>
